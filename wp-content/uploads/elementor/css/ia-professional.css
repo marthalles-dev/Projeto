@@ -515,3 +515,102 @@ input:focus, textarea:focus {
   html { scroll-behavior: auto !important; }
   .ia-pulse { animation: none !important; }
 }
+
+
+/* ================================================================
+   CORRECOES DE LAYOUT — Adicionado apos deploy
+   ================================================================ */
+
+/* Nav: espaco entre itens (fix compressao) */
+.elementor-nav-menu--main .elementor-nav-menu {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 0 28px !important;
+  align-items: center !important;
+}
+
+.elementor-nav-menu--main .elementor-item {
+  padding: 8px 0 !important;
+  white-space: nowrap !important;
+}
+
+/* Areas de Atuacao — grid estatico */
+.ia-areas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  padding: 16px 0 32px;
+  width: 100%;
+}
+
+.ia-area-card {
+  background: #FFFFFF;
+  border-radius: 10px;
+  border-left: 4px solid #C3A84C;
+  box-shadow: 0 2px 12px rgba(27,42,74,0.08);
+  padding: 28px 24px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: transform 0.32s ease, box-shadow 0.32s ease;
+}
+
+.ia-area-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 32px rgba(27,42,74,0.15);
+  border-left-color: #1B2A4A;
+}
+
+.ia-area-icon {
+  color: #C3A84C;
+  line-height: 1;
+}
+
+.ia-area-card h3.elementor-heading-title {
+  font-size: 1.05rem !important;
+  line-height: 1.35 !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  color: #1B2A4A !important;
+}
+
+.ia-area-card h3.elementor-heading-title::after { display: none !important; }
+
+.ia-area-card p {
+  font-size: 0.88rem !important;
+  line-height: 1.65 !important;
+  color: #666 !important;
+  flex: 1;
+}
+
+.ia-area-card .elementor-button {
+  margin-top: 4px !important;
+  align-self: flex-start !important;
+  padding: 10px 20px !important;
+  font-size: 11px !important;
+  animation: none !important;
+}
+
+/* Hero: garante texto legivel sobre o banner */
+.elementor-element-c2afc41,
+.elementor-element-e5a17be,
+.elementor-element-77d1c79 {
+  position: relative;
+}
+
+.elementor-element-c2afc41 .e-con-inner,
+.elementor-element-e5a17be .e-con-inner,
+.elementor-element-77d1c79 .e-con-inner {
+  position: relative;
+  z-index: 1;
+}
+
+/* Responsivo — areas grid */
+@media screen and (max-width: 1024px) {
+  .ia-areas-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+}
+
+@media screen and (max-width: 640px) {
+  .ia-areas-grid { grid-template-columns: 1fr; gap: 16px; }
+  .ia-area-card { padding: 20px 18px 24px; }
+}

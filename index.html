@@ -248,6 +248,50 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </noscript>
 <script type="application/javascript">const rocket_pairs = [{"selector":".elementor-8 .elementor-element.elementor-element-e5a17be, .elementor-8 .elementor-element.elementor-element-e5a17be > .elementor-background-video-container, .elementor-8 .elementor-element.elementor-element-e5a17be > .e-con-inner > .elementor-background-video-container, .elementor-8 .elementor-element.elementor-element-e5a17be > .elementor-background-slideshow, .elementor-8 .elementor-element.elementor-element-e5a17be > .e-con-inner > .elementor-background-slideshow, .elementor-8 .elementor-element.elementor-element-e5a17be > .elementor-motion-effects-container > .elementor-motion-effects-layer","style":".elementor-8 .elementor-element.elementor-element-e5a17be::before, .elementor-8 .elementor-element.elementor-element-e5a17be > .elementor-background-video-container::before, .elementor-8 .elementor-element.elementor-element-e5a17be > .e-con-inner > .elementor-background-video-container::before, .elementor-8 .elementor-element.elementor-element-e5a17be > .elementor-background-slideshow::before, .elementor-8 .elementor-element.elementor-element-e5a17be > .e-con-inner > .elementor-background-slideshow::before, .elementor-8 .elementor-element.elementor-element-e5a17be > .elementor-motion-effects-container > .elementor-motion-effects-layer::before{--wpr-bg-a9cd313d-7eda-4581-b0ff-d51e0abb5c86: url('https:\/\/iaadvocaciaempresarial.com.br\/wp-content\/uploads\/2023\/07\/banner-adv-modelo-home-2.jpg');}","hash":"a9cd313d-7eda-4581-b0ff-d51e0abb5c86","url":"https:\/\/iaadvocaciaempresarial.com.br\/wp-content\/uploads\/2023\/07\/banner-adv-modelo-home-2.jpg"},{"selector":".elementor-8 .elementor-element.elementor-element-77d1c79:not(.elementor-motion-effects-element-type-background), .elementor-8 .elementor-element.elementor-element-77d1c79 > .elementor-motion-effects-container > .elementor-motion-effects-layer","style":".elementor-8 .elementor-element.elementor-element-77d1c79:not(.elementor-motion-effects-element-type-background), .elementor-8 .elementor-element.elementor-element-77d1c79 > .elementor-motion-effects-container > .elementor-motion-effects-layer{--wpr-bg-1c4cf5f9-c132-4255-b09e-18e8a9fda3df: url('https:\/\/iaadvocaciaempresarial.com.br\/wp-content\/uploads\/2023\/07\/banner-adv-modelo-home-1.jpg');}","hash":"1c4cf5f9-c132-4255-b09e-18e8a9fda3df","url":"https:\/\/iaadvocaciaempresarial.com.br\/wp-content\/uploads\/2023\/07\/banner-adv-modelo-home-1.jpg"},{"selector":".rll-youtube-player .play","style":".rll-youtube-player .play{--wpr-bg-37e54e65-629a-4d6d-adc1-2c1354d9bc22: url('https:\/\/iaadvocaciaempresarial.com.br\/wp-content\/plugins\/wp-rocket\/assets\/img\/youtube.png');}","hash":"37e54e65-629a-4d6d-adc1-2c1354d9bc22","url":"https:\/\/iaadvocaciaempresarial.com.br\/wp-content\/plugins\/wp-rocket\/assets\/img\/youtube.png"}]; const rocket_excluded_pairs = [{"selector":".elementor-8 .elementor-element.elementor-element-c2afc41:not(.elementor-motion-effects-element-type-background), .elementor-8 .elementor-element.elementor-element-c2afc41 > .elementor-motion-effects-container > .elementor-motion-effects-layer","style":".elementor-8 .elementor-element.elementor-element-c2afc41:not(.elementor-motion-effects-element-type-background), .elementor-8 .elementor-element.elementor-element-c2afc41 > .elementor-motion-effects-container > .elementor-motion-effects-layer{--wpr-bg-c0188470-38e4-46ab-a1a5-fdb1c2d3e94b: url('https:\/\/iaadvocaciaempresarial.com.br\/wp-content\/uploads\/2023\/08\/bannerc.jpg');}","hash":"c0188470-38e4-46ab-a1a5-fdb1c2d3e94b","url":"https:\/\/iaadvocaciaempresarial.com.br\/wp-content\/uploads\/2023\/08\/bannerc.jpg"}];</script>  <link rel="stylesheet" href="wp-content/uploads/elementor/css/rebranding-override.css" media="all" id="rebranding-override-css">
   <link rel="stylesheet" href="wp-content/uploads/elementor/css/ia-professional.css" media="all" id="ia-professional-css" />
+<style id="ia-bg-fix">
+/* Fix WP Rocket lazy-load backgrounds no site estatico */
+/* Remove o bloqueio de background para todos os containers */
+.e-con.e-parent:not(.e-lazyloaded):not(.e-no-lazyload),
+.e-con.e-parent:not(.e-lazyloaded):not(.e-no-lazyload) * {
+  background-image: unset;
+}
+/* Hero principal (desktop) */
+.elementor-8 .elementor-element.elementor-element-c2afc41 {
+  background-image: url('wp-content/uploads/2023/08/bannerc.jpg') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  min-height: 85vh;
+}
+/* Banner modelo 2 */
+.elementor-8 .elementor-element.elementor-element-e5a17be {
+  background-image: url('wp-content/uploads/2023/07/banner-adv-modelo-home-2.jpg') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+.elementor-8 .elementor-element.elementor-element-e5a17be::before {
+  background-image: url('wp-content/uploads/2023/07/banner-adv-modelo-home-2.jpg') !important;
+}
+/* Banner modelo 1 */
+.elementor-8 .elementor-element.elementor-element-77d1c79 {
+  background-image: url('wp-content/uploads/2023/07/banner-adv-modelo-home-1.jpg') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+/* Overlay escuro sobre os banners para manter legibilidade */
+.elementor-8 .elementor-element.elementor-element-c2afc41::before,
+.elementor-8 .elementor-element.elementor-element-e5a17be::after,
+.elementor-8 .elementor-element.elementor-element-77d1c79::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(27,42,74,0.55);
+  z-index: 0;
+  pointer-events: none;
+}
+</style>
 </head>
 <body class="home wp-singular page-template page-template-elementor_header_footer page page-id-8 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor snd-default hello-elementor-default elementor-default elementor-template-full-width elementor-kit-5 elementor-page elementor-page-8">
 
@@ -423,7 +467,48 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		</div>
 						</div>
 				<div class="elementor-element elementor-element-5b966fd elementor-widget__width-initial elementor-widget elementor-widget-jet-listing-grid" data-id="5b966fd" data-element_type="widget" data-e-type="widget" id="slide-atuacao" data-settings="{&quot;columns&quot;:&quot;3&quot;,&quot;columns_tablet&quot;:&quot;2&quot;,&quot;columns_mobile&quot;:&quot;1&quot;}" data-widget_type="jet-listing-grid.default">
-					<div class="jet-listing-grid jet-listing-grid--lazy-load jet-listing jet-listing-grid-loading" data-lazy-load="{&quot;offset&quot;:&quot;0px&quot;,&quot;post_id&quot;:8,&quot;queried_id&quot;:&quot;8|WP_Post&quot;}"><div class="jet-listing-grid__loader"><div class="jet-listing-grid__loader-spinner"></div></div></div>				</div>
+					<div class="jet-listing-grid"><div class="ia-areas-grid">
+  <div class="ia-area-card">
+    <div class="ia-area-icon">
+      <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+    </div>
+    <h3 class="elementor-heading-title">Advocacia Especializada em Direito Banc&#225;rio</h3>
+    <p>Defesa em execu&#231;&#245;es e revis&#227;o de contratos banc&#225;rios abusivos. Protegemos seus direitos contra cobran&#231;as indevidas e cl&#225;usulas ilegais.</p>
+    <a href="areas-de-atuacao/advocacia-especializada-em-direito-bancario/index.html" class="elementor-button elementor-button-link elementor-size-sm">Saiba mais</a>
+  </div>
+  <div class="ia-area-card">
+    <div class="ia-area-icon">
+      <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    </div>
+    <h3 class="elementor-heading-title">Suspens&#227;o de Leil&#227;o de Im&#243;veis</h3>
+    <p>Atua&#231;&#227;o r&#225;pida para suspender leil&#245;es extrajudiciais ilegais e defender seu patrim&#244;nio imobili&#225;rio com seguran&#231;a jur&#237;dica.</p>
+    <a href="areas-de-atuacao/suspensao-de-leilao-de-imoveis/index.html" class="elementor-button elementor-button-link elementor-size-sm">Saiba mais</a>
+  </div>
+  <div class="ia-area-card">
+    <div class="ia-area-icon">
+      <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+    </div>
+    <h3 class="elementor-heading-title">Aquisi&#231;&#227;o de Im&#243;vel de Leil&#227;o</h3>
+    <p>Assessoria completa para compra segura de im&#243;veis em leil&#245;es judiciais e extrajudiciais, com an&#225;lise jur&#237;dica pr&#233;via.</p>
+    <a href="areas-de-atuacao/aquisicao-de-imovel-de-leilao/index.html" class="elementor-button elementor-button-link elementor-size-sm">Saiba mais</a>
+  </div>
+  <div class="ia-area-card">
+    <div class="ia-area-icon">
+      <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+    </div>
+    <h3 class="elementor-heading-title">Desconto para Quita&#231;&#227;o de Financiamento</h3>
+    <p>Negocia&#231;&#227;o estrat&#233;gica com institui&#231;&#245;es financeiras para obter descontos significativos na quita&#231;&#227;o antecipada de financiamentos.</p>
+    <a href="areas-de-atuacao/desconto-para-quitacao-antecipada-de-financiamento/index.html" class="elementor-button elementor-button-link elementor-size-sm">Saiba mais</a>
+  </div>
+  <div class="ia-area-card">
+    <div class="ia-area-icon">
+      <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+    </div>
+    <h3 class="elementor-heading-title">Defesa de Empresas Endividadas</h3>
+    <p>Blindagem patrimonial e reestrutura&#231;&#227;o de d&#237;vidas para empresas, garantindo a continuidade dos neg&#243;cios com segurança jurídica.</p>
+    <a href="areas-de-atuacao/defesa-de-empresas-endividadas-e-blindagem-patrimonial/index.html" class="elementor-button elementor-button-link elementor-size-sm">Saiba mais</a>
+  </div>
+</div></div>				</div>
 				</div>
 				</div>
 		<div class="elementor-element elementor-element-13a34c0 e-flex e-con-boxed e-con e-parent" data-id="13a34c0" data-element_type="container" data-e-type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
