@@ -1,0 +1,117 @@
+/* ============================================================
+   IA ADVOCACIA EMPRESARIAL — Override de Rebranding
+   Paleta:
+     Midnight      #1B2A4A  (headers, footers, seções destaque)
+     Champagne Gold #C3A84C  (botões, links, bordas, hover)
+     Graphite Gray  #444444  (texto principal)
+     Accent Orange  #F5A840  (detalhes quentes)
+     Marble White   #F9F9F9 / #FFFFFF (fundos gerais)
+   ============================================================ */
+
+/* ── Body & fundos gerais ──────────────────────────────────── */
+body,
+.elementor-section.elementor-section-boxed > .elementor-container,
+.elementor-widget-container {
+  background-color: #FFFFFF;
+}
+
+.elementor-section[data-settings],
+section.elementor-section {
+  background-color: #FFFFFF;
+}
+
+/* ── Cabeçalho / Header ──────────────────────────────────── */
+header,
+.site-header,
+.elementor-location-header,
+.elementor-section.has-bg-color,
+nav, .main-nav {
+  background-color: #1B2A4A !important;
+  color: #FFFFFF !important;
+}
+
+/* ── Rodapé / Footer ─────────────────────────────────────── */
+footer,
+.site-footer,
+.elementor-location-footer {
+  background-color: #1B2A4A !important;
+  color: #FFFFFF !important;
+}
+
+/* ── Textos principais ───────────────────────────────────── */
+p, li, span, td, th,
+.elementor-widget-text-editor,
+.elementor-widget-text-editor *,
+.entry-content p,
+.elementor-text-editor p {
+  color: #444444;
+}
+
+/* ── Títulos ─────────────────────────────────────────────── */
+h1, h2, h3, h4, h5, h6,
+.elementor-heading-title {
+  color: #1B2A4A;
+}
+
+/* ── Links ───────────────────────────────────────────────── */
+a {
+  color: #C3A84C;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: #F5A840;
+}
+
+/* ── Botões ──────────────────────────────────────────────── */
+.elementor-button,
+.elementor-button-wrapper .elementor-button,
+.wp-block-button .wp-block-button__link,
+button, input[type="submit"], input[type="button"] {
+  background-color: #C3A84C !important;
+  border-color: #C3A84C !important;
+  color: #FFFFFF !important;
+}
+.elementor-button:hover,
+.elementor-button-wrapper .elementor-button:hover,
+button:hover, input[type="submit"]:hover {
+  background-color: #1B2A4A !important;
+  border-color: #1B2A4A !important;
+  color: #FFFFFF !important;
+}
+
+/* ── Destaque / accent ───────────────────────────────────── */
+.accent, .highlight,
+.elementor-icon-list-icon svg,
+.elementor-icon svg {
+  color: #C3A84C;
+  fill: #C3A84C;
+}
+
+/* ── Bordas e divisores ──────────────────────────────────── */
+.elementor-divider-separator,
+hr {
+  border-color: #C3A84C !important;
+}
+
+/* ── Seções de fundo escuro (hero/banner) ────────────────── */
+.elementor-section.elementor-section-full_width[style*="background"],
+.hero, .banner-section {
+  background-color: #1B2A4A !important;
+}
+
+/* ── Formulários ─────────────────────────────────────────── */
+input, textarea, select {
+  border: 1px solid #C3A84C;
+  border-radius: 4px;
+  color: #444444;
+}
+input:focus, textarea:focus, select:focus {
+  outline: 2px solid #C3A84C;
+}
+
+/* ── WhatsApp floating button ────────────────────────────── */
+.ctc-btn, .ctc-theme-classic,
+[class*="whatsapp"][class*="button"],
+[id*="whatsapp"] a {
+  background-color: #25D366 !important;
+}
