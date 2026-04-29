@@ -1216,6 +1216,23 @@
 		href="//fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap">
 
 <style id="ia-custom-fixes">
+
+/* Hero Overlay */
+.hero-overlay {
+    position: relative;
+}
+.hero-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.65); /* Escurecimento de 65% */
+    z-index: 0;
+    pointer-events: none;
+}
+.hero-overlay > * {
+    position: relative;
+    z-index: 1;
+}
 /* Smooth Navigation */
 html { scroll-behavior: smooth; }
 
@@ -1281,7 +1298,7 @@ a:hover { opacity: 0.8; }
 							<source
 								srcset="https://iaadvocaciaempresarial.com.br/wp-content/webp-express/webp-images/uploads/2021/11/Logomarca-1-1024x566.jpg.webp 1024w, https://iaadvocaciaempresarial.com.br/wp-content/webp-express/webp-images/uploads/2021/11/Logomarca-1-300x166.jpg.webp 300w, https://iaadvocaciaempresarial.com.br/wp-content/webp-express/webp-images/uploads/2021/11/Logomarca-1-768x425.jpg.webp 768w, https://iaadvocaciaempresarial.com.br/wp-content/webp-express/webp-images/uploads/2021/11/Logomarca-1.jpg.webp 1063w"
 								sizes="(max-width: 800px) 100vw, 800px" type="image/webp"><img loading="lazy" fetchpriority="high"
-								width="800" height="442" src="wp-content/uploads/2021/11/Logomarca-1-1024x566.jpg"
+								width="800" height="442" src="wp-content/uploads/logo.jpg"
 								class="attachment-large size-large wp-image-1104 webpexpress-processed" alt=""
 								srcset="https://iaadvocaciaempresarial.com.br/wp-content/uploads/2021/11/Logomarca-1-1024x566.jpg 1024w, https://iaadvocaciaempresarial.com.br/wp-content/uploads/2021/11/Logomarca-1-300x166.jpg 300w, https://iaadvocaciaempresarial.com.br/wp-content/uploads/2021/11/Logomarca-1-768x425.jpg 768w, https://iaadvocaciaempresarial.com.br/wp-content/uploads/2021/11/Logomarca-1.jpg 1063w"
 								sizes="(max-width: 800px) 100vw, 800px">
