@@ -968,49 +968,17 @@
 	<link rel="stylesheet" href="wp-content/uploads/elementor/css/ia-professional.css" media="all"
 		id="ia-professional-css">
 	<style id="ia-bg-fix">
-		/* Fix WP Rocket lazy-load backgrounds no site estatico */
-		/* Remove o bloqueio de background para todos os containers */
-		
-
-		/* Hero principal (desktop) */
-		.elementor-8 .elementor-element.elementor-element-c2afc41 {
+		/* Hero: garante background-image com especificidade igual ao Elementor */
+		.elementor-8 .elementor-element.elementor-element-c2afc41:not(.elementor-motion-effects-element-type-background),
+		.elementor-8 .elementor-element.elementor-element-c2afc41 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
 			background-image: url('hero-bg.jpg') !important;
 			background-size: cover !important;
 			background-position: center center !important;
 			background-repeat: no-repeat !important;
-			min-height: 85vh;
 		}
-
-		/* Banner modelo 2 */
-		.elementor-8 .elementor-element.elementor-element-e5a17be {
-			background-image: url('wp-content/uploads/2023/07/banner-adv-modelo-home-2.jpg') !important;
-			background-size: cover !important;
-			background-position: center center !important;
-			background-repeat: no-repeat !important;
-		}
-
-		.elementor-8 .elementor-element.elementor-element-e5a17be::before {
-			background-image: url('wp-content/uploads/2023/07/banner-adv-modelo-home-2.jpg') !important;
-		}
-
-		/* Banner modelo 1 */
-		.elementor-8 .elementor-element.elementor-element-77d1c79 {
-			background-image: url('wp-content/uploads/2023/07/banner-adv-modelo-home-1.jpg') !important;
-			background-size: cover !important;
-			background-position: center center !important;
-			background-repeat: no-repeat !important;
-		}
-
-		/* Overlay escuro sobre os banners para manter legibilidade */
-		.elementor-8 .elementor-element.elementor-element-c2afc41::before,
-		.elementor-8 .elementor-element.elementor-element-e5a17be::after,
-		.elementor-8 .elementor-element.elementor-element-77d1c79::before {
-			content: '';
-			position: absolute;
-			inset: 0;
-			background: rgba(27, 42, 74, 0.55);
-			z-index: 0;
-			pointer-events: none;
+		/* Overlay do hero: suavizado para imagem aparecer */
+		.elementor-8 .elementor-element.elementor-element-c2afc41 {
+			--overlay-opacity: 0.3 !important;
 		}
 	</style>
 	<script src="https://iaadvocaciaempresarial.com.br/wp-includes/js/wp-emoji-release.min.js?ver=6.9.4"

@@ -80,46 +80,127 @@ a:hover { color: var(--ia-accent); }
 /* ── Header ───────────────────────────────────────────────────── */
 .elementor-location-header {
   background-color: var(--ia-midnight) !important;
-  box-shadow: var(--shadow-md) !important;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.35) !important;
   position: sticky !important;
   top: 0 !important;
   z-index: 9999 !important;
-  transition: box-shadow 0.3s var(--ease) !important;
+  transition: box-shadow 0.35s var(--ease), background-color 0.35s var(--ease) !important;
+  border-bottom: 1px solid rgba(195,168,76,0.25) !important;
 }
 
 .elementor-location-header.ia-scrolled {
-  box-shadow: 0 4px 32px rgba(27,42,74,0.28) !important;
+  background-color: rgba(27,42,74,0.97) !important;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.45) !important;
+  backdrop-filter: blur(8px) !important;
 }
 
-/* ── Nav Menu ─────────────────────────────────────────────────── */
-.elementor-nav-menu a,
+/* ── Logo no header ───────────────────────────────────────────── */
+.elementor-location-header .elementor-widget-image img {
+  max-height: 52px !important;
+  width: auto !important;
+  object-fit: contain !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+/* ── Nav Menu — estilo clean com underline animado ────────────── */
+.elementor-nav-menu--main {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0 !important;
+}
+
+.elementor-nav-menu--main .elementor-nav-menu {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0 4px !important;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Cada item de menu */
 .elementor-nav-menu--main .elementor-item {
+  position: relative !important;
   font-family: var(--font-sans) !important;
-  font-size: 12.5px !important;
+  font-size: 11.5px !important;
   font-weight: 600 !important;
-  letter-spacing: 0.09em !important;
+  letter-spacing: 0.12em !important;
   text-transform: uppercase !important;
-  color: rgba(255,255,255,0.88) !important;
-  padding: 6px 0 !important;
+  color: rgba(255,255,255,0.80) !important;
+  padding: 8px 14px !important;
+  text-decoration: none !important;
   transition: color 0.25s ease !important;
+  white-space: nowrap !important;
+  border-radius: 3px !important;
 }
 
-.elementor-nav-menu a:hover,
-.elementor-nav-menu .elementor-item-active {
+/* Underline animado */
+.elementor-nav-menu--main .elementor-item::after {
+  content: '' !important;
+  position: absolute !important;
+  bottom: 4px !important;
+  left: 14px !important;
+  right: 14px !important;
+  height: 2px !important;
+  background: var(--ia-gold) !important;
+  border-radius: 2px !important;
+  transform: scaleX(0) !important;
+  transform-origin: center !important;
+  transition: transform 0.28s var(--ease) !important;
+}
+
+.elementor-nav-menu--main .elementor-item:hover,
+.elementor-nav-menu--main .elementor-item-active,
+.elementor-nav-menu--main .elementor-item.current-menu-item {
   color: var(--ia-gold) !important;
+  background: rgba(195,168,76,0.08) !important;
 }
 
-/* Mobile hamburger */
-.elementor-nav-menu__toggle { cursor: pointer; }
+.elementor-nav-menu--main .elementor-item:hover::after,
+.elementor-nav-menu--main .elementor-item-active::after,
+.elementor-nav-menu--main .elementor-item.current-menu-item::after {
+  transform: scaleX(1) !important;
+}
+
+/* ── Mobile hamburger ─────────────────────────────────────────── */
+.elementor-nav-menu__toggle {
+  cursor: pointer !important;
+  color: rgba(255,255,255,0.9) !important;
+  padding: 8px !important;
+}
+
+.elementor-nav-menu__toggle i,
+.elementor-nav-menu__toggle svg {
+  font-size: 24px !important;
+  color: rgba(255,255,255,0.9) !important;
+}
+
 .elementor-nav-menu--dropdown {
   background: var(--ia-midnight) !important;
   border-top: 2px solid var(--ia-gold) !important;
-  box-shadow: var(--shadow-lg) !important;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4) !important;
+  border-radius: 0 0 8px 8px !important;
+  overflow: hidden !important;
 }
-.elementor-nav-menu--dropdown a {
-  padding: 14px 24px !important;
+
+.elementor-nav-menu--dropdown .elementor-item {
+  font-family: var(--font-sans) !important;
+  font-size: 11.5px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  color: rgba(255,255,255,0.82) !important;
+  padding: 15px 24px !important;
   border-bottom: 1px solid rgba(255,255,255,0.06) !important;
-  display: block;
+  display: block !important;
+  transition: color 0.2s ease, background 0.2s ease !important;
+}
+
+.elementor-nav-menu--dropdown .elementor-item:hover {
+  color: var(--ia-gold) !important;
+  background: rgba(195,168,76,0.1) !important;
+  padding-left: 30px !important;
 }
 
 /* ── Section spacing & width ──────────────────────────────────── */
