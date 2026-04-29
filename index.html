@@ -937,7 +937,7 @@
 	<style id="wpr-lazyload-bg-exclusion">
 		.elementor-8 .elementor-element.elementor-element-c2afc41:not(.elementor-motion-effects-element-type-background),
 		.elementor-8 .elementor-element.elementor-element-c2afc41>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-			--wpr-bg-c0188470-38e4-46ab-a1a5-fdb1c2d3e94b: url('wp-content/uploads/2023/08/bannerc.jpg');
+			--wpr-bg-c0188470-38e4-46ab-a1a5-fdb1c2d3e94b: url('hero-bg.jpg');
 		}
 	</style>
 	<noscript>
@@ -970,14 +970,11 @@
 	<style id="ia-bg-fix">
 		/* Fix WP Rocket lazy-load backgrounds no site estatico */
 		/* Remove o bloqueio de background para todos os containers */
-		.e-con.e-parent:not(.e-lazyloaded):not(.e-no-lazyload),
-		.e-con.e-parent:not(.e-lazyloaded):not(.e-no-lazyload) * {
-			background-image: unset;
-		}
+		
 
 		/* Hero principal (desktop) */
 		.elementor-8 .elementor-element.elementor-element-c2afc41 {
-			background-image: url('wp-content/uploads/2023/08/bannerc.jpg') !important;
+			background-image: url('hero-bg.jpg') !important;
 			background-size: cover !important;
 			background-position: center center !important;
 			background-repeat: no-repeat !important;
@@ -1295,9 +1292,7 @@ a:hover { opacity: 0.8; }
 					data-id="bdf0feb" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 					<a href="index.html">
 						<picture>
-							<source
-								srcset="https://iaadvocaciaempresarial.com.br/wp-content/webp-express/webp-images/uploads/2021/11/Logomarca-1-1024x566.jpg.webp 1024w, https://iaadvocaciaempresarial.com.br/wp-content/webp-express/webp-images/uploads/2021/11/Logomarca-1-300x166.jpg.webp 300w, https://iaadvocaciaempresarial.com.br/wp-content/webp-express/webp-images/uploads/2021/11/Logomarca-1-768x425.jpg.webp 768w, https://iaadvocaciaempresarial.com.br/wp-content/webp-express/webp-images/uploads/2021/11/Logomarca-1.jpg.webp 1063w"
-								sizes="(max-width: 800px) 100vw, 800px" type="image/webp"><img loading="lazy" fetchpriority="high"
+							<img loading="lazy" fetchpriority="high"
 								width="800" height="442" src="logo.jpg"
 								class="attachment-large size-large wp-image-1104 webpexpress-processed" alt="">
 						</picture>
@@ -1628,7 +1623,7 @@ a:hover { opacity: 0.8; }
 				</div>
 			</div>
 		</div>
-		<div class="elementor-element elementor-element-c2afc41 elementor-hidden-mobile e-con-full e-flex e-con e-parent"
+		<div class="e-lazyloaded elementor-element elementor-element-c2afc41 elementor-hidden-mobile e-con-full e-flex e-con e-parent"
 			data-id="c2afc41" data-element_type="container" data-e-type="container"
 			data-settings="{&quot;jet_parallax_layout_list&quot;:[{&quot;jet_parallax_layout_image&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;_id&quot;:&quot;7e172b0&quot;,&quot;jet_parallax_layout_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_speed&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:50,&quot;sizes&quot;:[]},&quot;jet_parallax_layout_type&quot;:&quot;scroll&quot;,&quot;jet_parallax_layout_direction&quot;:&quot;1&quot;,&quot;jet_parallax_layout_fx_direction&quot;:null,&quot;jet_parallax_layout_z_index&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x&quot;:50,&quot;jet_parallax_layout_bg_x_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y&quot;:50,&quot;jet_parallax_layout_bg_y_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size&quot;:&quot;auto&quot;,&quot;jet_parallax_layout_bg_size_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_animation_prop&quot;:&quot;transform&quot;,&quot;jet_parallax_layout_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;]}],&quot;background_background&quot;:&quot;classic&quot;}"
 			data-rocket-lazy-bg-c0188470-38e4-46ab-a1a5-fdb1c2d3e94b="excluded">
@@ -1672,9 +1667,7 @@ a:hover { opacity: 0.8; }
 						data-id="e8b73cd" data-element_type="widget" data-e-type="widget"
 						data-widget_type="image.default">
 						<picture>
-							<source
-								srcset="https://iaadvocaciaempresarial.com.br/wp-content/webp-express/webp-images/uploads/2023/08/mofff-1.png.webp 700w, https://iaadvocaciaempresarial.com.br/wp-content/webp-express/webp-images/uploads/2023/08/mofff-1-300x210.png.webp 300w"
-								sizes="(max-width: 700px) 100vw, 700px" type="image/webp"><img loading="lazy" decoding="async"
+							<img loading="lazy" decoding="async"
 								width="700" height="490" src="servico-empresas.jpg"
 								class="attachment-full size-full wp-image-885 webpexpress-processed" alt="">
 						</picture>
@@ -1816,7 +1809,7 @@ a:hover { opacity: 0.8; }
 			<div class="e-con-inner">
 			</div>
 		</div>
-		<div class="elementor-element elementor-element-e5a17be e-flex e-con-boxed e-con e-parent" data-id="e5a17be"
+		<div class="e-lazyloaded elementor-element elementor-element-e5a17be e-flex e-con-boxed e-con e-parent" data-id="e5a17be"
 			data-element_type="container" data-e-type="container"
 			data-settings="{&quot;jet_parallax_layout_list&quot;:[{&quot;jet_parallax_layout_image&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;_id&quot;:&quot;14d4c14&quot;,&quot;jet_parallax_layout_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_speed&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:50,&quot;sizes&quot;:[]},&quot;jet_parallax_layout_type&quot;:&quot;scroll&quot;,&quot;jet_parallax_layout_direction&quot;:&quot;1&quot;,&quot;jet_parallax_layout_fx_direction&quot;:null,&quot;jet_parallax_layout_z_index&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x&quot;:50,&quot;jet_parallax_layout_bg_x_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y&quot;:50,&quot;jet_parallax_layout_bg_y_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size&quot;:&quot;auto&quot;,&quot;jet_parallax_layout_bg_size_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_animation_prop&quot;:&quot;transform&quot;,&quot;jet_parallax_layout_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;]}],&quot;background_background&quot;:&quot;classic&quot;}">
 			<div class="e-con-inner">
@@ -1888,10 +1881,7 @@ a:hover { opacity: 0.8; }
 							data-widget_type="image.default">
 							<img loading="lazy" decoding="async" width="777" height="1024"
 								src="wp-content/uploads/2025/11/Fotos-Equipe-Vagner-01-777x1024.gif"
-								class="attachment-large size-large wp-image-1993" alt=""><noscript><img loading="lazy" decoding="async"
-									width="777" height="1024"
-									src="servico-imobiliario.jpg"
-									class="attachment-large size-large wp-image-1993" alt="" /></noscript>
+								class="attachment-large size-large wp-image-1993" alt="">
 						</div>
 					</div>
 					<div class="elementor-element elementor-element-af92edc e-con-full e-flex e-con e-child"
@@ -1932,7 +1922,7 @@ a:hover { opacity: 0.8; }
 				</div>
 			</div>
 		</div>
-		<div class="elementor-element elementor-element-77d1c79 e-con-full e-flex e-con e-parent" data-id="77d1c79"
+		<div class="e-lazyloaded elementor-element elementor-element-77d1c79 e-con-full e-flex e-con e-parent" data-id="77d1c79"
 			data-element_type="container" data-e-type="container"
 			data-settings="{&quot;jet_parallax_layout_list&quot;:[{&quot;jet_parallax_layout_image&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;_id&quot;:&quot;14d4c14&quot;,&quot;jet_parallax_layout_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;jet_parallax_layout_speed&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:50,&quot;sizes&quot;:[]},&quot;jet_parallax_layout_type&quot;:&quot;scroll&quot;,&quot;jet_parallax_layout_direction&quot;:&quot;1&quot;,&quot;jet_parallax_layout_fx_direction&quot;:null,&quot;jet_parallax_layout_z_index&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x&quot;:50,&quot;jet_parallax_layout_bg_x_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_x_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y&quot;:50,&quot;jet_parallax_layout_bg_y_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_y_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size&quot;:&quot;auto&quot;,&quot;jet_parallax_layout_bg_size_tablet&quot;:&quot;&quot;,&quot;jet_parallax_layout_bg_size_mobile&quot;:&quot;&quot;,&quot;jet_parallax_layout_animation_prop&quot;:&quot;transform&quot;,&quot;jet_parallax_layout_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;]}],&quot;background_background&quot;:&quot;classic&quot;}">
 			<div class="elementor-element elementor-element-af57797 e-con-full e-flex e-con e-child" data-id="af57797"
@@ -2216,18 +2206,11 @@ atenciosos em pleno feriado, com competência. Fiquei muito satisfeita com o ret
 													href="stj-invalida-notificacao-por-e-mail-para-fins-de-comprovacao-da-mora/index.html"
 													class="post-thumbnail__link">
 													<picture>
-														<source
-															data-lazy-srcset="https://iaadvocaciaempresarial.com.br/wp-content/webp-express/webp-images/uploads/2023/08/Design-sem-nome-15.png.webp"
-															type="image/webp"><img loading="lazy" decoding="async"
+														<img loading="lazy" decoding="async"
 															class="post-thumbnail__img wp-post-image webpexpress-processed"
 															src="wp-content/uploads/2023/08/Design-sem-nome-15.png"
 															alt="STJ invalida notificação por e-mail para fins de comprovação da mora."
-															width="1800" height="1080"><noscript><img loading="lazy"
-																decoding="async"
-																class="post-thumbnail__img wp-post-image webpexpress-processed"
-																src="wp-content/uploads/2023/08/Design-sem-nome-15.png"
-																alt="STJ invalida notificação por e-mail para fins de comprovação da mora."
-																width="1800" height="1080"></noscript>
+															width="1800" height="1080">
 													</picture>
 												</a></div>
 											<div class="jet-posts__inner-content">
@@ -2251,18 +2234,11 @@ atenciosos em pleno feriado, com competência. Fiquei muito satisfeita com o ret
 													href="reconhecida-usucapiao-de-imovel-vendido-como-garantia-de-emprestimo/index.html"
 													class="post-thumbnail__link">
 													<picture>
-														<source
-															data-lazy-srcset="https://iaadvocaciaempresarial.com.br/wp-content/webp-express/webp-images/uploads/2023/08/Design-sem-nome-14.png.webp"
-															type="image/webp"><img loading="lazy" decoding="async"
+														<img loading="lazy" decoding="async"
 															class="post-thumbnail__img wp-post-image webpexpress-processed"
 															src="wp-content/uploads/2023/08/Design-sem-nome-14.png"
 															alt="Reconhecida usucapião de imóvel vendido como garantia de empréstimo."
-															width="1800" height="1080"><noscript><img loading="lazy"
-																decoding="async"
-																class="post-thumbnail__img wp-post-image webpexpress-processed"
-																src="wp-content/uploads/2023/08/Design-sem-nome-14.png"
-																alt="Reconhecida usucapião de imóvel vendido como garantia de empréstimo."
-																width="1800" height="1080"></noscript>
+															width="1800" height="1080">
 													</picture>
 												</a></div>
 											<div class="jet-posts__inner-content">
@@ -2286,18 +2262,11 @@ atenciosos em pleno feriado, com competência. Fiquei muito satisfeita com o ret
 													href="afastada-penhora-de-casa-construida-em-terreno-de-microempresa-devedora/index.html"
 													class="post-thumbnail__link">
 													<picture>
-														<source
-															data-lazy-srcset="https://iaadvocaciaempresarial.com.br/wp-content/webp-express/webp-images/uploads/2023/08/Design-sem-nome-13.png.webp"
-															type="image/webp"><img loading="lazy" decoding="async"
+														<img loading="lazy" decoding="async"
 															class="post-thumbnail__img wp-post-image webpexpress-processed"
 															src="wp-content/uploads/2023/08/Design-sem-nome-13.png"
 															alt="Afastada penhora de casa construída em terreno de microempresa devedora."
-															width="1800" height="1080"><noscript><img loading="lazy"
-																decoding="async"
-																class="post-thumbnail__img wp-post-image webpexpress-processed"
-																src="wp-content/uploads/2023/08/Design-sem-nome-13.png"
-																alt="Afastada penhora de casa construída em terreno de microempresa devedora."
-																width="1800" height="1080"></noscript>
+															width="1800" height="1080">
 													</picture>
 												</a></div>
 											<div class="jet-posts__inner-content">
@@ -2321,18 +2290,11 @@ atenciosos em pleno feriado, com competência. Fiquei muito satisfeita com o ret
 													href="juiz-suspende-atos-expropriatorios-de-imovel-levado-a-leilao/index.html"
 													class="post-thumbnail__link">
 													<picture>
-														<source
-															data-lazy-srcset="https://iaadvocaciaempresarial.com.br/wp-content/webp-express/webp-images/uploads/2023/08/Design-sem-nome-12.png.webp"
-															type="image/webp"><img loading="lazy" decoding="async"
+														<img loading="lazy" decoding="async"
 															class="post-thumbnail__img wp-post-image webpexpress-processed"
 															src="wp-content/uploads/2023/08/Design-sem-nome-12.png"
 															alt="Juiz suspende atos expropriatórios de imóvel levado a leilão."
-															width="1800" height="1080"><noscript><img loading="lazy"
-																decoding="async"
-																class="post-thumbnail__img wp-post-image webpexpress-processed"
-																src="wp-content/uploads/2023/08/Design-sem-nome-12.png"
-																alt="Juiz suspende atos expropriatórios de imóvel levado a leilão."
-																width="1800" height="1080"></noscript>
+															width="1800" height="1080">
 													</picture>
 												</a></div>
 											<div class="jet-posts__inner-content">
@@ -2356,18 +2318,11 @@ atenciosos em pleno feriado, com competência. Fiquei muito satisfeita com o ret
 													href="e-possivel-purgar-a-mora-ate-a-assinatura-do-auto-de-arrematacao-do-bem-em-leilao-extrajudicial/index.html"
 													class="post-thumbnail__link">
 													<picture>
-														<source
-															data-lazy-srcset="https://iaadvocaciaempresarial.com.br/wp-content/webp-express/webp-images/uploads/2023/08/Design-sem-nome-11.png.webp"
-															type="image/webp"><img loading="lazy" decoding="async"
+														<img loading="lazy" decoding="async"
 															class="post-thumbnail__img wp-post-image webpexpress-processed"
 															src="wp-content/uploads/2023/08/Design-sem-nome-11.png"
 															alt="É possível purgar a mora até a assinatura do auto de arrematação do bem em leilão extrajudicial."
-															width="1800" height="1080"><noscript><img loading="lazy"
-																decoding="async"
-																class="post-thumbnail__img wp-post-image webpexpress-processed"
-																src="wp-content/uploads/2023/08/Design-sem-nome-11.png"
-																alt="É possível purgar a mora até a assinatura do auto de arrematação do bem em leilão extrajudicial."
-																width="1800" height="1080"></noscript>
+															width="1800" height="1080">
 													</picture>
 												</a></div>
 											<div class="jet-posts__inner-content">
@@ -2392,18 +2347,11 @@ atenciosos em pleno feriado, com competência. Fiquei muito satisfeita com o ret
 													href="tj-sp-concede-liminar-que-suspende-carta-de-arrematacao-de-imovel/index.html"
 													class="post-thumbnail__link">
 													<picture>
-														<source
-															data-lazy-srcset="https://iaadvocaciaempresarial.com.br/wp-content/webp-express/webp-images/uploads/2023/08/Design-sem-nome-10.png.webp"
-															type="image/webp"><img loading="lazy" decoding="async"
+														<img loading="lazy" decoding="async"
 															class="post-thumbnail__img wp-post-image webpexpress-processed"
 															src="wp-content/uploads/2023/08/Design-sem-nome-10.png"
 															alt="TJ-SP concede liminar que suspende carta de arrematação de imóvel"
-															width="1800" height="1080"><noscript><img loading="lazy"
-																decoding="async"
-																class="post-thumbnail__img wp-post-image webpexpress-processed"
-																src="wp-content/uploads/2023/08/Design-sem-nome-10.png"
-																alt="TJ-SP concede liminar que suspende carta de arrematação de imóvel"
-																width="1800" height="1080"></noscript>
+															width="1800" height="1080">
 													</picture>
 												</a></div>
 											<div class="jet-posts__inner-content">
@@ -2923,13 +2871,9 @@ atenciosos em pleno feriado, com competência. Fiquei muito satisfeita com o ret
 						data-widget_type="image.default">
 						<a href="index.html">
 							<picture>
-								<source
-									srcset="https://iaadvocaciaempresarial.com.br/wp-content/webp-express/webp-images/uploads/2021/11/logo-br.png.webp 600w, https://iaadvocaciaempresarial.com.br/wp-content/webp-express/webp-images/uploads/2021/11/logo-br-300x166.png.webp 300w"
-									sizes="(max-width: 600px) 100vw, 600px" type="image/webp"><img loading="lazy" width="600"
-									height="331" src="wp-content/uploads/2021/11/logo-br.png"
-									class="attachment-full size-full wp-image-582 webpexpress-processed" alt=""
-									srcset="https://iaadvocaciaempresarial.com.br/wp-content/uploads/2021/11/logo-br.png 600w, https://iaadvocaciaempresarial.com.br/wp-content/uploads/2021/11/logo-br-300x166.png 300w"
-									sizes="(max-width: 600px) 100vw, 600px">
+								<img loading="lazy" width="600"
+									height="331" src="logo.jpg"
+									class="attachment-full size-full wp-image-582 webpexpress-processed" alt="">
 							</picture>
 						</a>
 					</div>
@@ -3493,10 +3437,8 @@ atenciosos em pleno feriado, com competência. Fiquei muito satisfeita com o ret
 			<div class="moove-gdpr-modal-left-content">
 
 				<div class="moove-gdpr-company-logo-holder">
-					<img loading="lazy" src="wp-content/plugins/gdpr-cookie-compliance/dist/images/gdpr-logo.png"
-						alt="IA Advocacia Empresarial" width="350" height="233" class="img-responsive"><noscript><img
-							src="wp-content/plugins/gdpr-cookie-compliance/dist/images/gdpr-logo.png"
-							alt="IA Advocacia Empresarial" width="350" height="233" class="img-responsive" /></noscript>
+					<img loading="lazy" src="logo.jpg"
+						alt="IA Advocacia Empresarial" width="350" height="233" class="img-responsive">
 				</div>
 				<!--  .moove-gdpr-company-logo-holder -->
 				<ul id="moove-gdpr-menu">
@@ -3650,7 +3592,7 @@ atenciosos em pleno feriado, com competência. Fiquei muito satisfeita com o ret
 		}, !1)</script>
 	<script data-no-minify="1" async=""
 		src="wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script>
-	<script>function lazyLoadThumb(e, alt) { var t = '<img loading="lazy" alt="" width="480" height="360"><noscript><img loading="lazy" src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>', a = '<button class="play" aria-label="play Youtube video"></button>'; t = t.replace('alt=""', 'alt="' + alt + '"'); return t.replace("ID", e) + a } function lazyLoadYoutubeIframe() { var e = document.createElement("iframe"), t = "ID?autoplay=1"; t += 0 === this.parentNode.dataset.query.length ? '' : '&' + this.parentNode.dataset.query; e.setAttribute("src", t.replace("ID", this.parentNode.dataset.src)), e.setAttribute("frameborder", "0"), e.setAttribute("allowfullscreen", "1"), e.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"), this.parentNode.parentNode.replaceChild(e, this.parentNode) } document.addEventListener("DOMContentLoaded", function () { var e, t, p, a = document.getElementsByClassName("rll-youtube-player"); for (t = 0; t < a.length; t++)e = document.createElement("div"), e.setAttribute("data-id", a[t].dataset.id), e.setAttribute("data-query", a[t].dataset.query), e.setAttribute("data-src", a[t].dataset.src), e.innerHTML = lazyLoadThumb(a[t].dataset.id, a[t].dataset.alt), a[t].appendChild(e), p = e.querySelector('.play'), p.onclick = lazyLoadYoutubeIframe });</script>
+	<script>function lazyLoadThumb(e, alt) { var t = '<img loading="lazy" alt="" width="480" height="360">', a = '<button class="play" aria-label="play Youtube video"></button>'; t = t.replace('alt=""', 'alt="' + alt + '"'); return t.replace("ID", e) + a } function lazyLoadYoutubeIframe() { var e = document.createElement("iframe"), t = "ID?autoplay=1"; t += 0 === this.parentNode.dataset.query.length ? '' : '&' + this.parentNode.dataset.query; e.setAttribute("src", t.replace("ID", this.parentNode.dataset.src)), e.setAttribute("frameborder", "0"), e.setAttribute("allowfullscreen", "1"), e.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"), this.parentNode.parentNode.replaceChild(e, this.parentNode) } document.addEventListener("DOMContentLoaded", function () { var e, t, p, a = document.getElementsByClassName("rll-youtube-player"); for (t = 0; t < a.length; t++)e = document.createElement("div"), e.setAttribute("data-id", a[t].dataset.id), e.setAttribute("data-query", a[t].dataset.query), e.setAttribute("data-src", a[t].dataset.src), e.innerHTML = lazyLoadThumb(a[t].dataset.id, a[t].dataset.alt), a[t].appendChild(e), p = e.querySelector('.play'), p.onclick = lazyLoadYoutubeIframe });</script>
 	<script>class RocketElementorAnimation { constructor() { this.deviceMode = document.createElement("span"), this.deviceMode.id = "elementor-device-mode-wpr", this.deviceMode.setAttribute("class", "elementor-screen-only"), document.body.appendChild(this.deviceMode) } _detectAnimations() { let t = getComputedStyle(this.deviceMode, ":after").content.replace(/"/g, ""); this.animationSettingKeys = this._listAnimationSettingsKeys(t), document.querySelectorAll(".elementor-invisible[data-settings]").forEach(t => { const e = t.getBoundingClientRect(); if (e.bottom >= 0 && e.top <= window.innerHeight) try { this._animateElement(t) } catch (t) { } }) } _animateElement(t) { const e = JSON.parse(t.dataset.settings), i = e._animation_delay || e.animation_delay || 0, n = e[this.animationSettingKeys.find(t => e[t])]; if ("none" === n) return void t.classList.remove("elementor-invisible"); t.classList.remove(n), this.currentAnimation && t.classList.remove(this.currentAnimation), this.currentAnimation = n; let s = setTimeout(() => { t.classList.remove("elementor-invisible"), t.classList.add("animated", n), this._removeAnimationSettings(t, e) }, i); window.addEventListener("rocket-startLoading", function () { clearTimeout(s) }) } _listAnimationSettingsKeys(t = "mobile") { const e = [""]; switch (t) { case "mobile": e.unshift("_mobile"); case "tablet": e.unshift("_tablet"); case "desktop": e.unshift("_desktop") }const i = []; return ["animation", "_animation"].forEach(t => { e.forEach(e => { i.push(t + e) }) }), i } _removeAnimationSettings(t, e) { this._listAnimationSettingsKeys().forEach(t => delete e[t]), t.dataset.settings = JSON.stringify(e) } static run() { const t = new RocketElementorAnimation; requestAnimationFrame(t._detectAnimations.bind(t)) } } document.addEventListener("DOMContentLoaded", RocketElementorAnimation.run);</script>
 	<script src="wp-content/uploads/elementor/js/ia-animations.js" defer="" id="ia-animations-js"></script>
 
